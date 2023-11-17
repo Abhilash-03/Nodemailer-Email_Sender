@@ -1,0 +1,19 @@
+{
+  "name": "mailsender",
+  "version": "1.0.0",
+  "description": "This is a mini project where I can send mail using nodemailer",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhilash",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7"
+  }
+}
