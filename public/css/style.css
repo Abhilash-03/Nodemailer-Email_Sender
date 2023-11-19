@@ -106,3 +106,22 @@ input:is(:hover, :focus), textarea:is(:hover, :focus){
     font-size: 19px;
     display: none;
 }
+.loading{
+    text-align: center;
+    color: yellow;
+    display: none;
+    animation: load 1.6s infinite alternate;
+}
+
+@keyframes load {
+    0%{
+        color: rgb(207, 32, 90);
+        transform: scale(.6) translateX(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-60px);
+
+    }
+}
+
