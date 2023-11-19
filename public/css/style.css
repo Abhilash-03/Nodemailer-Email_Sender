@@ -99,3 +99,10 @@ input:is(:hover, :focus), textarea:is(:hover, :focus){
     transform: scale(1.03);
     box-shadow: 1px 1px 10px cornflowerblue;
 }
+
+.info{
+    color: white;
+    margin-top: 10px;
+    font-size: 19px;
+    display: none;
+}
