@@ -38,13 +38,14 @@ const sendMessage = async (req, res) => {
 
     await transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-        console.log(error);
+        res.status(400).json({error, info: "Check your internet connection!!"})
       } else {
         console.log("Email sent: " + info.response);
+        res.status(200).json({ info: {username, email, message} });
+
       }
     });
 
-    res.status(200).json({ info: {username, email, message} });
   } catch (err) {
     res.status(400).json({ err: err });
   }
