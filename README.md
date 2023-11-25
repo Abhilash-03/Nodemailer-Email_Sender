@@ -2,6 +2,9 @@
 - Nodemailer-Email_Sender
 - It is email sending project using nodemailer.
 
+## Mail Message Output Image
+ ![](mailImage/mailOutputImage.png) 
+ 
 ## Requirements
 
 - Node.js
